@@ -10,16 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Yathra">
         <activity
-            android:name=".Timetable_Row"
-            android:exported="false" />
-        <activity
             android:name=".UpdateTimetable"
             android:exported="false" />
         <activity
             android:name=".SearchTimetable"
             android:exported="false" />
         <activity
-            android:name=".TimetableDisplay"
+            android:name=".TimetableList"
             android:exported="false" />
         <activity
             android:name=".Timetable_Home"

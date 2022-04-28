@@ -34,7 +34,7 @@ public class Timetable_Home extends AppCompatActivity {
         displayTimetablePage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(Timetable_Home.this,TimetableDisplay.class);
+                Intent intent1 = new Intent(Timetable_Home.this, TimetableList.class);
                 startActivity(intent1);
 
                 Toast.makeText(Timetable_Home.this, "Timetables", Toast.LENGTH_SHORT).show();

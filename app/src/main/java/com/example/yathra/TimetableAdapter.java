@@ -14,60 +14,52 @@ import java.util.ArrayList;
 public class TimetableAdapter extends RecyclerView.Adapter<TimetableAdapter.MyViewHolder> {
 
     private Context context;
-    private ArrayList timeID, routeName, startStation, endStation, trainName;
+    private ArrayList routeName, tDate, arriveTime, departTime, trainName;
 
-    TimetableAdapter(Context context,
-                     ArrayList timeID,
-                     ArrayList routeName,
-                     ArrayList startStation,
-                     ArrayList endStation,
-                     ArrayList trainName){
-
+    public TimetableAdapter(Context context, ArrayList routeName, ArrayList tDate, ArrayList arriveTime, ArrayList departTime, ArrayList trainName) {
         this.context = context;
-        this.timeID = timeID;
         this.routeName = routeName;
-        this.startStation = startStation;
-        this.endStation = endStation;
+        this.tDate = tDate;
+        this.arriveTime = arriveTime;
+        this.departTime = departTime;
         this.trainName = trainName;
-
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.activity_timetable_row,parent,false);
-        return new MyViewHolder(view);
+        View v = LayoutInflater.from(context).inflate(R.layout.userentry,parent,false);
+        return new MyViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        holder.timeID.setText(String.valueOf(timeID.get(position)));
         holder.routeName.setText(String.valueOf(routeName.get(position)));
-        holder.startStation.setText(String.valueOf(startStation.get(position)));
-        holder.endStation.setText(String.valueOf(endStation.get(position)));
+        holder.tDate.setText(String.valueOf(tDate.get(position)));
+        holder.arriveTime.setText(String.valueOf(arriveTime.get(position)));
+        holder.departTime.setText(String.valueOf(departTime.get(position)));
         holder.trainName.setText(String.valueOf(trainName.get(position)));
 
     }
 
     @Override
     public int getItemCount() {
-        return timeID.size();
+        return routeName.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView timeID, routeName, startStation, endStation, trainName;
+        TextView routeName, tDate, arriveTime, departTime, trainName;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            timeID = itemView.findViewById(R.id.txtIDTR);
-           routeName = itemView.findViewById(R.id.txtRouteNameTD);
-           startStation = itemView.findViewById(R.id.txtStartStationTD);
-           endStation = itemView.findViewById(R.id.txtEndStationTD);
-           trainName = itemView.findViewById(R.id.txtTrainNameTR);
+            routeName = itemView.findViewById(R.id.txtRouteNameDisplay);
+            tDate = itemView.findViewById(R.id.txtDateDisplay);
+            arriveTime = itemView.findViewById(R.id.txtArriveTimeDisplay);
+            departTime = itemView.findViewById(R.id.txtDepartTimeDisplay);
+            trainName = itemView.findViewById(R.id.txtTrainNameDisplay);
         }
     }
 }
