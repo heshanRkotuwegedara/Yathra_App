@@ -45,6 +45,7 @@ public class YathraDatabaseHelper extends SQLiteOpenHelper {
                 ");";
 
         db.execSQL(TABLE_CREATE_QUERY);
+
     }
 
     @Override
@@ -76,10 +77,8 @@ public class YathraDatabaseHelper extends SQLiteOpenHelper {
         long result = db.insert(Timetable_TABLE_NAME, null, contentValues);
 
         if(result == -1 ){
-            Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show();
             return false;
         }else{
-            Toast.makeText(context, "Saved Successfully", Toast.LENGTH_SHORT).show();
             return true;
         }
 

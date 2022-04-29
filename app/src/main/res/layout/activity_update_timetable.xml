@@ -32,7 +32,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="7dp"
         android:fontFamily="@font/bungee_regular"
-        android:text="Update Timetable"
+        android:text="Create Timetable"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.192"
@@ -55,59 +55,80 @@
         app:layout_constraintTop_toBottomOf="@+id/textVieHeaderUT" />
 
     <EditText
-        android:id="@+id/editTextStartStationUT"
+        android:id="@+id/editTextDateUT"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
+        android:hint="Date"
         android:inputType="textPersonName"
-        android:hint="Start Station"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextRouteNameUT" />
 
     <EditText
-        android:id="@+id/editTextEndStationUT"
+        android:id="@+id/editTextArriveTimeUT"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
+        android:hint="Arrive Time"
         android:inputType="textPersonName"
-        android:hint="End Station"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextStartStationUT" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextDateUT" />
 
     <EditText
-        android:id="@+id/editTextTrainNameUT"
+        android:id="@+id/editTextDepartRimeUT"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
+        android:hint="Depart Time"
         android:inputType="textPersonName"
-        android:hint="Train Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEndStationUT" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextArriveTimeUT" />
+
+    <EditText
+        android:id="@+id/editTexTrainNameUT"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Train Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDepartRimeUT" />
+
 
     <Button
-        android:id="@+id/btnUpdateTimetableUT"
+        android:id="@+id/btnSaveTimetableUT"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="20dp"
-        android:text="Update"
+        android:backgroundTint="#3B3B3B"
+        android:text="Save"
+        android:textStyle="bold"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTrainNameUT"
+        app:layout_constraintTop_toBottomOf="@+id/editTexTrainNameUT"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
