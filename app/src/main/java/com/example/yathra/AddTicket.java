@@ -21,10 +21,6 @@ public class AddTicket extends AppCompatActivity {
     Toast dataSavedToast;
     Button btnSave;
 
-    //one boolean variable to check whether all the text fields
-    //are filled by the user, properly or not.
-    boolean isAllFiledChecked = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,12 +67,5 @@ public class AddTicket extends AppCompatActivity {
         }else {
             Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show();
         }
-    }
-
-//    public void ShowTickets(View view) {
-//        startActivity(new Intent(AddTicket.this, DisplayTicket.class));
-//    }
-
-    private class Ticket {
     }
 }

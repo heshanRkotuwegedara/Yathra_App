@@ -49,7 +49,7 @@
                 android:id="@+id/editTextTicketDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_11"
+                android:drawableLeft="@drawable/ic_calendar"
                 android:focusable="true"
                 android:inputType="date" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -64,7 +64,7 @@
                 android:id="@+id/editTextTicketTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_11"
+                android:drawableLeft="@drawable/ic_time"
                 android:focusable="true"
                 android:inputType="time" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -82,6 +82,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextClassType"
                 android:layout_width="370dp"
+                android:drawableLeft="@drawable/ic_class"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName" />
 
@@ -97,7 +98,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextStartFrom"
-                android:drawableLeft="@drawable/ic_time"
+                android:drawableLeft="@drawable/ic_11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName" />
@@ -113,7 +114,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextEndTo"
-                android:drawableLeft="@drawable/ic_time"
+                android:drawableLeft="@drawable/ic_11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName" />
@@ -131,6 +132,7 @@
                 android:id="@+id/editTextPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_money"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
