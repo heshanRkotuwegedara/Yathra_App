@@ -58,7 +58,7 @@ public class TicketAdapter extends  RecyclerView.Adapter<TicketAdapter.TicketVH>
         holder.cardUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(context, ticketM.getDate() + " Ticket will be updatd", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(context, ticketM.getDate() + " Ticket will be updated", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(context, UpdateTicket.class);
                 intent.putExtra("TicketModel", ticketM);

@@ -8,6 +8,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -18,6 +19,11 @@ public class AddTicket extends AppCompatActivity {
 
     EditText TCDate, TCTime, TCClass, TCFrom, TCTo, TCPrice ;
     Toast dataSavedToast;
+    Button btnSave;
+
+    //one boolean variable to check whether all the text fields
+    //are filled by the user, properly or not.
+    boolean isAllFiledChecked = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +36,8 @@ public class AddTicket extends AppCompatActivity {
         TCFrom = findViewById(R.id.editTextStartFrom);
         TCTo = findViewById(R.id.editTextEndTo);
         TCPrice = findViewById(R.id.editTextPrice);
+
+        btnSave = findViewById(R.id.btnCreateTicket);
 
         //Custom Toast Message For Data Saved
         LayoutInflater inflater = getLayoutInflater();
