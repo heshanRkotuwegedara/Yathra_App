@@ -1,6 +1,6 @@
 # Yathra App
 ![](GIF/train.gif.crdownload)    
-# Project Name - Personal Train Assistant System
+# Project Name - Ythra - Personal Train Assistant System
 # Group Name - AMIGOS
 ### Group Leader - IT20605834 - Kotuwe Gedara H.R (it20605834)
 ### Member 2 - IT20614676 -Mr. Sandeepa U.W.P.S (SuranSandeepa)
