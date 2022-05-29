@@ -21,6 +21,8 @@ public class AddTicket extends AppCompatActivity {
     Toast dataSavedToast;
     Button btnSave;
 
+    boolean isChecked = false ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,8 +34,6 @@ public class AddTicket extends AppCompatActivity {
         TCFrom = findViewById(R.id.editTextStartFrom);
         TCTo = findViewById(R.id.editTextEndTo);
         TCPrice = findViewById(R.id.editTextPrice);
-
-        btnSave = findViewById(R.id.btnCreateTicket);
 
         //Custom Toast Message For Data Saved
         LayoutInflater inflater = getLayoutInflater();

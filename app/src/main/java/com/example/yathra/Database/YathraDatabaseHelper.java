@@ -372,7 +372,7 @@ public class YathraDatabaseHelper extends SQLiteOpenHelper {
         return  result;
     }
 
-    //Display TTicket Details
+    //Display Ticket Details (Array)
     public  ArrayList<TicketModel> getAllTickets(){
 
         ArrayList<TicketModel> ticketDetails = new ArrayList<>();
@@ -422,6 +422,7 @@ public class YathraDatabaseHelper extends SQLiteOpenHelper {
         return result;
     }
 
+    //Delete Ticket
     public int deleteTickets(int id) {
 
         SQLiteDatabase sqLiteDatabase = getReadableDatabase();
