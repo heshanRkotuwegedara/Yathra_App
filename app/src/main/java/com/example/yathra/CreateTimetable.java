@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class CreateTimetable extends AppCompatActivity {
 
     YathraDatabaseHelper myDBHelper;
-    EditText routeName, date, arriveTime, departTime, trainName;
+    EditText date, arriveTime, departTime, trainName;
     Button btnCreate;
 
 
@@ -20,7 +20,7 @@ public class CreateTimetable extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_timetable);
 
-        routeName = findViewById(R.id.editTextRouteName);
+        EditText routeName = (EditText) findViewById(R.id.editTextRouteName);
         date = findViewById(R.id.editTextDate);
         arriveTime = findViewById(R.id.editTextArriveTime);
         departTime = findViewById(R.id.editTextDepartRime);
