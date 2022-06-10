@@ -22,6 +22,7 @@ public class TrainModel implements Serializable {
         this.trainCategory = trainCategory;
     }
 
+    //getters
     public int getId() {
         return id;
     }
