@@ -31,7 +31,8 @@ public class CreateTimetable extends AppCompatActivity {
         btnCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                
+                //get text boxes values to variable
                 String editTextRouteName = routeName.getText().toString().trim();
                 String editTextDate = date.getText().toString().trim();
                 String editTextArriveTime = arriveTime.getText().toString().trim();
