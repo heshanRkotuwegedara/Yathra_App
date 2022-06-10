@@ -11,4 +11,5 @@ public class SearchTimetable extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_timetable);
     }
+    //
 }
